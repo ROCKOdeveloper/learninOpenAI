@@ -14,7 +14,7 @@ def main():
 
     while True :
         # Creas un imput para interactuar desde terminal
-        content = input("\n > Realiza una pregunta:")
+        content = input("\n > Realiza una pregunta: ")
 
         # Creamos condicional para salir del programa con la palabra clave exit
         if content == "exit":
