@@ -6,3 +6,18 @@ Este proyecto es una muestra del potencial de la inteligencia artificial y sus a
 
 ## Contenido
 
+- Instalación e introducción a OpenAI
+  - Completar texto
+  - Generar imagen
+- Importacion y introducción a Embeddings
+  - Usarlo
+  - Compararlos
+  - Sumarlos
+  - Aplicarlos a un chat bot
+  - Procesar PDF
+- Introducción a Fine tuning
+  - Preparación y carga de datos
+  - Entrenamiento de modelo
+  - Uso de modelo entrenado
+
+(este documento como todo el proyecto esta en progreso)
