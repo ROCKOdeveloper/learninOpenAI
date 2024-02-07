@@ -2,17 +2,19 @@ import openai
 import typer
 from rich import print
 
+
 def main():
 
     # api key
-    openai.api_key = "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"
+    openai.api_key = ""
 
     print("\n[bold green]ChatGPT API en Python[/bold green]")
 
     # Creas un acondicionamiento para provocar una respuesta más asertiva 
-    messages = [{"role": "system","content": "Eres un asistente muy útil de programación nivel senior"}]
+    messages = [{"role": "system",
+                 "content": "Eres una IA muy agradable"}]
 
-    while True :
+    while True:
         # Creas un imput para interactuar desde terminal
         content = input("\n > Realiza una pregunta: ")
 
@@ -24,16 +26,19 @@ def main():
         messages.append({"role": "user", "content": content})
 
         # Generamos una respuesta con el modelo seleccionado
-        response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages)
+        response = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo", messages=messages)
 
-        # Respondemos a la pregunta 
+        # Respondemos a la pregunta
         response_content = response.choices[0].message.content
 
         # Le guardamos las respuestas en asistente
         messages.append({"role": "assistant", "content": response_content})
 
         # print(response)
-        print(f"\n[bold green]>>> [/bold green][green]{response_content}[/green]")
+        print(
+            f"\n[bold green]>>> [/bold green][green]{response_content}[/green]")
+
 
 if __name__ == "__main__":
     typer.run(main)

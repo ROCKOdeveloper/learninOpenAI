@@ -20,4 +20,4 @@ Este proyecto es una muestra del potencial de la inteligencia artificial y sus a
   - Entrenamiento de modelo
   - Uso de modelo entrenado
 
-(este documento como todo el proyecto esta en progreso)
+(Este documento como todo el proyecto esta en desarrollo)
